@@ -1,11 +1,14 @@
 
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "https://wa-paradiso-dev-app-fcbzd4hzhee7fme8.centralus-01.azurewebsites.net/"
+    },
     {
       "source": "/:path*",
-      "destination": "https://wa-paradiso-dev-app-fcbzd4hzhee7fme8.centralus-01.azurewebsites.net/:path*",
-      "permanent": false
+      "destination": "https://wa-paradiso-dev-app-fcbzd4hzhee7fme8.centralus-01.azurewebsites.net/:path*"
     }
   ]
 }
